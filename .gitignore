@@ -1,0 +1,26 @@
+# Игнорировать node_modules во всех подпапках
+**/node_modules/
+
+# Клиент (Next.js)
+client/.next/
+client/out/
+client/build/
+client/coverage/
+client/.pnp.*
+client/.yarn/*
+!client/.yarn/patches
+!client/.yarn/plugins
+!client/.yarn/releases
+!client/.yarn/versions
+
+# Сервер
+server/.dist/
+
+# Общие файлы
+.DS_Store
+*.pem
+*.log*
+.env*
+*.tsbuildinfo
+next-env.d.ts
+.vercel

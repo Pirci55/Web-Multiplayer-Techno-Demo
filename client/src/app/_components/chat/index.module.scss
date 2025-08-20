@@ -1,0 +1,59 @@
+.chat {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 1vh;
+    bottom: 10vh;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+
+    .messages {
+        height: 200px;
+        width: 400px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        word-break: normal;
+
+        li {
+            margin-top: 1px;
+        }
+    }
+
+    .form {
+        margin-top: 10px;
+        display: flex;
+        border-radius: inherit;
+
+        input {
+            padding: 5px;
+            background: rgb(60, 30, 60);
+            border: unset;
+            border-radius: inherit;
+
+            &::placeholder {
+                color: rgb(150, 75, 75);
+            }
+        }
+
+        .textInput {
+            flex-grow: 1;
+        }
+
+        .submitButton {
+            position: relative;
+            margin-left: 1px;
+
+            &::after {
+                content: "";
+                /* Обязательное свойство */
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 20px;
+                height: 20px;
+                background-color: red;
+            }
+        }
+    }
+}
