@@ -6,6 +6,10 @@
 
 Прототип real-time multiplayer игры, демонстрирующий работу с сетевым взаимодействием и синхронизацией состояния между клиентами.
 
+## Демо
+
+![](https://github.com/Pirci55/Web-Multiplayer-Techno-Demo/blob/main/demo.gif)
+
 ## Основной функционал
 
 - Установление реального соединения между клиентами через WebSockets (Colyseus).
